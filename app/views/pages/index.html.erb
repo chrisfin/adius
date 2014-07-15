@@ -1,0 +1,135 @@
+<div class="landing">
+	<div class="cover_red">
+
+		<div class="message">
+			<h1>ADIUS PRIME</h1>
+			<h2>Discover sounds that resonate with your audience.</h2>
+		</div>
+
+		<div class="action">
+	 		<div class="call">
+				<%= form_for @user, {:class => "form-inline"} do |f| %>
+						<% if @user.errors.any? %>
+						<ul>
+						  <% @user.errors.full_messages.each do |msg| %>
+						    <li><%= msg %></li>
+						  <% end %>
+						</ul>
+						<% end %>
+					<div class="form-group">
+						<%= f.text_field :email, :placeholder => "Email Address" %>
+						<%= f.submit "Request Early Access", class: "btn-action" %>
+					</div>
+				<% end %>
+			</div>
+	 	</div>
+	
+
+	 	<div class="call_info">
+	 		Adius Prime is a premium test and development framework for product sound design. Craft unique digial sounds. Stand out. 
+	 	</div>
+
+	</div>
+</div>	
+
+<div>
+
+<div class="sell_one">
+	<div class="cover_grey">
+		<div class="sell_title_grey">
+			Discover the Latest in Product Sound Design
+		</div>
+		<div class="sell_info_grey">
+			Our in-house sound designers are in tune with the latest in digital product deisgn.
+			We will work with you to determine which sonic tonalities resonate with your unique user base.
+		</div>
+	</div>
+</div>
+
+<div>
+	<div class="cover_grey_soft">
+		<div class="sell_title_grey">
+			Unique Auditory Signatures Deapen User Engagement
+		</div>
+		<div class="sell_info_grey">
+			Integrate with our testing suite to determine which sounds and frequencies enhance user engagement
+		</div>
+	</div>
+</div>		
+
+<div class="cover_red">
+	<div class="sell_title_red">
+			A Beautiful Dashboard for Viewing Test Results 
+	</div>
+	<div class="sell_info_red">
+			View and manage your test results with our Sonic Dashboard. Gain the insights into which efforts are achieving the best results.
+	</div>
+</div>
+
+<div class="action_grey">
+		<div class="sell_title_grey">
+			Ready to Take Adius for a Spin? Request Early Access.
+		</div>
+
+		<div class="sell_info_grey_action">
+			Coming soon to ears everwhere
+		</div>
+		
+		<div class="last_action">
+	 		<div class="last_call">
+				<%= form_for @user, {:class => "form-inline"} do |f| %>
+					<div class="form-group">
+						<%= f.text_field :email, :placeholder => "Email Address" %>
+						<%= f.submit "Request Early Access", class: "btn-final_action" %>
+					</div>
+				<% end %>
+			</div>
+	 	</div>
+
+	</div>
+</div>	
+
+<div class="crafted">
+	<div class="cover_red">
+		<div class="sell_title_red">
+			Crafted with Love By
+		</div>
+
+		<div class="pic_well">
+			<div class="pic_inner">
+				
+				<div class="pic_title" style="float:left;">
+					
+					<div class="square">
+						<div class="chris_pic">
+							<div class="pic_cover_red">
+							</div>
+						</div>
+					</div>
+					<p> <strong>CHRIS FINLAYSON</strong>	 </p>
+					<p> CEO </p>
+				</div>		
+				
+				<div class="pic_title" style="float:right;">
+					<div class="square">
+						<div class="alex_pic">
+						</div>
+					</div>	
+					<p> <strong>ALEX SIEGAL</strong>	 </p>
+					<p> Head of Sound Design </p>
+				</div>	
+			</div>	
+			
+				<div class="pic_title" style="float:right;">
+					<div class="square">
+						<div class="jess_pic">
+						</div>
+					</div>	
+					<p> <strong>JESS VENTICINQUE</strong>	 </p>
+					<p> Head of Product Design </p>
+				</div>	
+		</div>	
+
+	</div>
+</div>
+

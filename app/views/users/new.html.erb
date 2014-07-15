@@ -1,0 +1,29 @@
+<div class="landing">
+	<div class="cover_red">
+
+		<div class="message">
+			<h1>ADIUS PRIME</h1>
+			<h2>Discover sounds that resonate with your audience.</h2>
+		</div>
+
+		<div class="action">
+	 		<div class="call">
+				<%= form_for @user, {:class => "form-inline"} do |f| %>
+						<% if @user.errors.any? %>
+						<ul>
+						  <% @user.errors.full_messages.each do |msg| %>
+						    <li><%= msg %></li>
+						  <% end %>
+						</ul>
+						<% end %>
+					<div class="form-group">
+						<%= f.text_field :email, :placeholder => "Email Address" %>
+						<%= f.submit "Request Early Access", class: "btn-action" %>
+					</div>
+				<% end %>
+			</div>
+	 	</div>
+	
+
+	</div>
+</div>		
